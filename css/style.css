@@ -28,7 +28,7 @@ header {
 }
 header {
   display: block; /* Для старых браузеров */
-  height: 160px; /* Высота шапки */
+  /*height: 160px;*/ /* Высота шапки */
   line-height: 100px; /*Высота текста */
   font-size: 18px;
   color: rgb(36, 29, 131); /* цвет текста */
