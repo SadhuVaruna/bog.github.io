@@ -1,124 +1,145 @@
 /*@media "UTF=8";*/
 
 .header {
-    margin: 10px;
-    padding: 15px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    box-shadow: 0 0 20px #eee; /* Параметры тени */
-    border-radius: 10px;
-    display: block;
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee; /* Параметры тени */
+  border-radius: 10px;
+  display: block;
+  display: flex; /* блочный флекс контейнер */
 }
 
 body {
-    display: flex; /* блочный флекс контейнер */
-    flex-direction: column;
+  display: flex; /* блочный флекс контейнер */
+  flex-direction: column;
 }
 header {
-    background-image: linear-gradient(to right, #00c3ff 0%, #ffff1c 51%, #00c3ff 100%);
+  background-image: linear-gradient(
+    to right,
+    #00c3ff 0%,
+    #ffff1c 51%,
+    #00c3ff 100%
+  );
 }
 header {
-    display: block; /* Для старых браузеров */
-    height: 160px; /* Высота шапки */
-    line-height: 100px; /*Высота текста */
-    font-size: 18px;
-    color: rgb(36, 29, 131); /* цвет текста */
-    /*background: #cfe3fc;
+  display: block; /* Для старых браузеров */
+  height: 160px; /* Высота шапки */
+  line-height: 100px; /*Высота текста */
+  font-size: 18px;
+  color: rgb(36, 29, 131); /* цвет текста */
+  /*background: #cfe3fc;
     background: linear-gradient(to right, #ffff88, #a8ffa8, #93b8fd);*/
-    border-radius: 6px;
-    text-align: center; /* Выравнивание по центру */
-    background-size: 200% auto;
-    /*text-transform: uppercase;*/
-    box-shadow: 0 0 20px #eee; /* Параметры тени */
-    border: 2px solid #467813;
-    transition: background-position, color, 1.5s cubic-bezier(0.65, 0.75, 0.85, 1) 0s;
+  border-radius: 6px;
+  text-align: center; /* Выравнивание по центру */
+  background-size: 200% auto;
+  /*text-transform: uppercase;*/
+  box-shadow: 0 0 20px #eee; /* Параметры тени */
+  border: 2px solid #467813;
+  transition: background-position, color,
+    1.5s cubic-bezier(0.65, 0.75, 0.85, 1) 0s;
 }
 header:hover {
-    background-position: right center; /* Положение фона */
-    color: #fff;
-    text-decoration: none;
+  background-position: right center; /* Положение фона */
+  color: #fff;
+  text-decoration: none;
 }
 main {
-    display: flex; /* блочный флекс контейнер */
-    flex-direction: column;
+  display: flex; /* блочный флекс контейнер */
+  flex-direction: column;
+}
+.color {
+  color: red;
+}
+.color-time {
+  color: blue;
 }
 article,
 section {
-    display: flex; /* блочный флекс контейнер */
-    flex-direction: column;
-    border: 2px solid #467813;
-    border-radius: 6px;
-    margin: 5px 0;
-    padding: 0 2em 0 0;
-    background: rgb(182, 232, 252); /* цвет заднего фона */
+  display: flex; /* блочный флекс контейнер */
+  flex-direction: column;
+  border: 2px solid #467813;
+  border-radius: 6px;
+  margin: 5px 0;
+  padding: 0 2em 0 0;
+  background: rgb(182, 232, 252); /* цвет заднего фона */
 }
 
 article li {
-    display: flex; /* блочный флекс контейнер */
-    border: 1px solid #467813;
-    border-radius: 6px;
-    margin: 5px 0;
-    padding: 0.5em 1em 0.5em 1em;
-    background: rgb(236, 242, 253); /* цвет заднего фона */
-    transition-duration: 1.5s, 3s, 1.5s; /* продолжительность переходного эффекта (для каждого свойства своя) */
-    transition-property: background-color, border-color, color; /* свойства, которые подлежат переходному эффекту */
+  display: flex; /* блочный флекс контейнер */
+  border: 1px solid #467813;
+  border-radius: 6px;
+  margin: 5px 0;
+  padding: 0.5em 1em 0.5em 1em;
+  background: rgb(236, 242, 253); /* цвет заднего фона */
+  transition-duration: 1.5s, 3s, 1.5s; /* продолжительность переходного эффекта (для каждого свойства своя) */
+  transition-property: background-color, border-color, color; /* свойства, которые подлежат переходному эффекту */
 
-    /*font-size: 125%;*/
-    /*height: 30px;*/
+  /*font-size: 125%;*/
+  /*height: 30px;*/
 }
 
 li:hover {
-    background: #a8ffa8; /* устанавливаем цвет заднего фона при наведении на элемент  */
-    color: rgb(0, 4, 255); /* устанавливаем цвет текста при наведении*/
-    /*transition-duration: 1.5s;*/ /* продолжительность переходного эффекта 0,5 секунд */
-    border-color: rgb(0, 4, 255); /* устанавливаем цвет границ элемента при наведении*/
+  background: #a8ffa8; /* устанавливаем цвет заднего фона при наведении на элемент  */
+  color: rgb(0, 4, 255); /* устанавливаем цвет текста при наведении*/
+  /*transition-duration: 1.5s;*/ /* продолжительность переходного эффекта 0,5 секунд */
+  border-color: rgb(
+    0,
+    4,
+    255
+  ); /* устанавливаем цвет границ элемента при наведении*/
 }
 
 a:hover {
-    background: #a8ffa8; /* устанавливаем цвет заднего фона при наведении на элемент  */
-    color: rgb(0, 4, 255); /* устанавливаем цвет текста при наведении*/
-    transition-duration: 1.5s; /* продолжительность переходного эффекта 0,5 секунд */
-    border-color: rgb(0, 4, 255); /* устанавливаем цвет границ элемента при наведении*/
+  background: #a8ffa8; /* устанавливаем цвет заднего фона при наведении на элемент  */
+  color: rgb(0, 4, 255); /* устанавливаем цвет текста при наведении*/
+  transition-duration: 1.5s; /* продолжительность переходного эффекта 0,5 секунд */
+  border-color: rgb(
+    0,
+    4,
+    255
+  ); /* устанавливаем цвет границ элемента при наведении*/
 }
 
 section {
-    display: flex; /* блочный флекс контейнер */
-    flex-direction: column;
-    padding: 0 1em 0 1em;
+  display: flex; /* блочный флекс контейнер */
+  flex-direction: column;
+  padding: 0 1em 0 1em;
 }
 div {
-    border-radius: 6px;
-    border: 2px solid #467813;
-    margin: 5px 0 5px 0;
-    padding: 0 1em 0 1em;
-    background: rgb(240, 249, 253); /* цвет заднего фона */
+  border-radius: 6px;
+  border: 2px solid #467813;
+  margin: 5px 0 5px 0;
+  padding: 0 1em 0 1em;
+  background: rgb(240, 249, 253); /* цвет заднего фона */
 }
 div > h2 {
-    color: rgb(36, 29, 131); /* цвет текста */
+  color: rgb(36, 29, 131); /* цвет текста */
 }
 
 ol {
-    /* убираем стандартную нумерацию */
-    list-style: none;
-    /* Идентифицируем счетчик и даем ему имя li. Значение счетчика не указано - по умолчанию оно равно 0 */
-    counter-reset: li;
+  /* убираем стандартную нумерацию */
+  list-style: none;
+  /* Идентифицируем счетчик и даем ему имя li. Значение счетчика не указано - по умолчанию оно равно 0 */
+  counter-reset: li;
 }
 li:before {
-    /* Определяем элемент, который будет нумероваться — li. Псевдоэлемент before указывает, что содержимое, вставляемое при помощи свойства content, будет располагаться перед пунктами списка. Здесь же устанавливается значение приращения счетчика (по умолчанию равно 1). */
-    counter-increment: li;
-    /* С помощью свойства content выводится номер пункта списка. counters() означает, что генерируемый текст представляет собой значения всех счетчиков с таким именем. Точка в кавычках добавляет разделяющую точку между цифрами, а точка с пробелом добавляется перед содержимым каждого пункта списка */
-    content: counters(li, ".") ". ";
+  /* Определяем элемент, который будет нумероваться — li. Псевдоэлемент before указывает, что содержимое, вставляемое при помощи свойства content, будет располагаться перед пунктами списка. Здесь же устанавливается значение приращения счетчика (по умолчанию равно 1). */
+  counter-increment: li;
+  /* С помощью свойства content выводится номер пункта списка. counters() означает, что генерируемый текст представляет собой значения всех счетчиков с таким именем. Точка в кавычках добавляет разделяющую точку между цифрами, а точка с пробелом добавляется перед содержимым каждого пункта списка */
+  content: counters(li, ".") ". ";
 }
 .footer {
-    background: #a292b9; /* Цвет фона */
-    height: 80px; /* Высота подвала */
-    text-align: center;
-    border-radius: 6px;
-    border: 2px solid #467813;
-    padding: 15px 0 0 0;
+  background: #a292b9; /* Цвет фона */
+  height: 80px; /* Высота подвала */
+  text-align: center;
+  border-radius: 6px;
+  border: 2px solid #467813;
+  padding: 15px 0 0 0;
 }
 
 header,
@@ -126,5 +147,28 @@ section,
 footer,
 main,
 article {
-    display: block; /* Блочный элемент для старых браузеров */
+  display: block; /* Блочный элемент для старых браузеров */
 }
+.buttonup {
+  width: 68px;
+  height: 68px;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+}
+
+/*body {
+  margin: 0;
+  padding: 0;
+  height: 350vh;
+}
+.arrowUp {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(130deg, #2d2722 50%, #398a99 50%);
+}
+*/
