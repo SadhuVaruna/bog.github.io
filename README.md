@@ -1,4 +1,9 @@
 # bog.github.io
+<br>
  Ссылка на сайт:
+ <br>
  https://sadhuvaruna.github.io/bog.github.io/
-    Используемые технологии: HTML, CSS, FlexBox
+ <br>
+ Используемые технологии: 
+<br>    
+HTML, CSS, FlexBox
